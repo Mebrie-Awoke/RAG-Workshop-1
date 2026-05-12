@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-
 # -----------------------------
 # Step 1: Load Environment Variables
 # -----------------------------
@@ -18,7 +17,7 @@ if not groq_api_key:
 documents = [
     {
         "title": "Mebrie Awoke",
-        "content": "I am Mebrie Awoke, a third-year Information Systems student at Addis"
+        "content": "Mebrie Awoke, a third-year Information Systems student at Addis"
         " Ababa University (AAU). I am passionate about Machine Learning and have hands-on"
         " experience training Convolutional Neural Network (CNN) models. I am continuously"
         " developing my skills and exploring new advancements in AI and data-driven technologies."
@@ -71,7 +70,7 @@ print(llm.invoke(improved_prompt).content)
 # -----------------------------
 
 
-user_question = "whoe is mebrie?"
+user_question = "who is mebrie?"
 
 # WITHOUT retrieval
 print("Answer WITHOUT retrieval:\n")
